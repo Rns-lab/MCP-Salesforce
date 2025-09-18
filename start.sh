@@ -4,8 +4,7 @@ set -euo pipefail
 # Env richieste in Render:
 #   SF_USERNAME    -> il tuo username Salesforce
 #   SFDX_CLIENT_ID -> Consumer Key della Connected App JWT
-#   SF_LOGIN_URL   -> https://login.salesforce.com (o il tuo MyDomain 
-login URL)
+#   SF_LOGIN_URL   -> https://login.salesforce.com (o il tuo MyDomain login URL)
 # Secret file:
 #   /etc/secrets/jwt.key -> private key generata (server.key)
 
