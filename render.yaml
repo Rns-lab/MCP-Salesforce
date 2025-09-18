@@ -1,15 +1,15 @@
 services:
   - type: web
-    name: salesforce-mcp
+    name: salesforce-dx-mcp
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
     autoDeploy: true
     envVars:
-      - key: SALESFORCE_USERNAME
+      - key: SF_USERNAME
         sync: false
-      - key: SALESFORCE_PASSWORD
+      - key: SFDX_CLIENT_ID
         sync: false
-      - key: SALESFORCE_SECURITY_TOKEN
-        sync: false
+      - key: SF_LOGIN_URL
+        value: https://login.salesforce.com
 
